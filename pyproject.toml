@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chicktools"
+version = "0.5.0"
+description = "Independent ComfyUI carrier-image and HTTP callback nodes"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+dependencies = ["requests>=2.31,<3", "urllib3>=1.26,<3", "numpy>=1.24,<3", "Pillow>=10.4", "imageio-ffmpeg>=0.5,<1"]
+authors = [{ name = "ChickTools contributors" }]
+classifiers = ["Operating System :: OS Independent"]
+
+[project.optional-dependencies]
+test = ["av>=14"]
+
+[project.urls]
+Repository = "https://github.com/chookg/ComfyUI-ChickTools"
+
+[tool.setuptools]
+packages = ["chicktools", "chicktools.nodes", "chicktools.utils", "chicktools.chick"]
+package-dir = { chicktools = "." }
+
+[tool.setuptools.package-data]
+chicktools = ["assets/*.png", "assets/*.svg"]
+
+[tool.comfy]
+# TODO: create a real publisher account; blank means not ready to publish.
+PublisherId = ""
+DisplayName = "ChickTools"

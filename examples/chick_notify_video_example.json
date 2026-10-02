@@ -1,0 +1,273 @@
+{
+  "last_node_id": 5,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "ImageBatchTestPattern",
+      "pos": [
+        70,
+        90
+      ],
+      "size": [
+        330,
+        300
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageBatchTestPattern"
+      },
+      "widgets_values": [
+        8,
+        0,
+        5,
+        5,
+        64,
+        64,
+        "FreeMono.ttf",
+        12
+      ],
+      "title": "视频测试图 · 8 帧 · 64×64"
+    },
+    {
+      "id": 2,
+      "type": "ChickHideNode",
+      "pos": [
+        460,
+        90
+      ],
+      "size": [
+        320,
+        240
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "chick_image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ChickHideNode"
+      },
+      "widgets_values": [
+        "demo-password",
+        "ChickTools video demo",
+        8,
+        2,
+        true
+      ],
+      "title": "小鸡节点 | Chick Hide · MP4"
+    },
+    {
+      "id": 3,
+      "type": "ChickSaveImage",
+      "pos": [
+        850,
+        90
+      ],
+      "size": [
+        340,
+        350
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ChickSaveImage"
+      },
+      "widgets_values": [
+        "ChickTools/video-demo"
+      ],
+      "title": "小鸡载体保存 | Chick Private Save"
+    },
+    {
+      "id": 4,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        70,
+        520
+      ],
+      "size": [
+        560,
+        180
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "视频载体测试已完成\n这条文本由 NotifyMe 发送到本地结果页。"
+      ],
+      "title": "输入通知文本 · STRING"
+    },
+    {
+      "id": 5,
+      "type": "NotifyMeNode",
+      "pos": [
+        850,
+        520
+      ],
+      "size": [
+        340,
+        200
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "msg",
+          "type": "STRING",
+          "link": 3
+        },
+        {
+          "name": "passthrough",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "passthrough",
+          "type": "*",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "NotifyMeNode"
+      },
+      "widgets_values": [
+        "http://127.0.0.1:8765/callback",
+        true,
+        "demo-task-001"
+      ],
+      "title": "通知我 | Notify Me"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      2,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      3,
+      4,
+      0,
+      5,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "① 8 帧测试图 → 小鸡节点 → MP4 载体",
+      "bounding": [
+        40,
+        20,
+        1190,
+        440
+      ],
+      "color": "#3b7184",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "② 文本 → NotifyMe → 本地结果页",
+      "bounding": [
+        40,
+        450,
+        1190,
+        300
+      ],
+      "color": "#596c95",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.72,
+      "offset": [
+        0,
+        0
+      ]
+    }
+  },
+  "version": 0.4
+}

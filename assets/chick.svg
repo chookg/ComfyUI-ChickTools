@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" role="img" aria-labelledby="title description">
+  <title id="title">ChickTools little chick</title>
+  <desc id="description">A round yellow baby chicken with a feather tuft, orange beak, rosy cheeks and tiny feet on an ivory background.</desc>
+  <rect width="640" height="640" rx="56" fill="#fff8e9"/>
+  <ellipse cx="320" cy="538" rx="150" ry="19" fill="#eddfc3"/>
+  <g stroke="#714629" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <g fill="none">
+      <path d="M274 486v38m0-1-25 14m25-14 21 14" stroke="#d88636"/>
+      <path d="M366 486v38m0-1-21 14m21-14 25 14" stroke="#d88636"/>
+    </g>
+    <path d="M192 324c-27-21-68-7-70 25-3 32 23 65 57 66l32-48z" fill="#efb935"/>
+    <path d="M452 323c30-23 62-66 83-52 19 14 3 52-15 77-19 26-44 41-68 39l-18-34z" fill="#efb935"/>
+    <path d="M294 178c-17-23-29-42-19-53 14-14 35 11 43 27-3-38 7-58 23-53 17 5 10 40 6 56 15-20 35-30 45-18 12 16-17 39-30 48z" fill="#ffd35c"/>
+    <path d="M320 174c99 0 168 88 168 193 0 99-69 139-168 139s-168-40-168-139c0-105 69-193 168-193z" fill="#ffda62"/>
+  </g>
+  <path d="M194 332c4-65 45-115 94-127" fill="none" stroke="#ffedaa" stroke-width="17" stroke-linecap="round"/>
+  <ellipse cx="320" cy="425" rx="85" ry="50" fill="#ffe798"/>
+  <ellipse cx="220" cy="355" rx="25" ry="16" fill="#f2a078"/>
+  <ellipse cx="420" cy="355" rx="25" ry="16" fill="#f2a078"/>
+  <g fill="#4d3427">
+    <ellipse cx="260" cy="308" rx="16" ry="21"/>
+    <ellipse cx="380" cy="308" rx="16" ry="21"/>
+  </g>
+  <g fill="#fffdf5">
+    <circle cx="255" cy="300" r="5"/>
+    <circle cx="375" cy="300" r="5"/>
+  </g>
+  <path d="M300 345q20-12 40 0l-20 25z" fill="#ed923d" stroke="#714629" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M184 359q14 28 39 35" fill="none" stroke="#d5a237" stroke-width="8" stroke-linecap="round"/>
+</svg>

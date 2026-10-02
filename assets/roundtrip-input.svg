@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192">
+  <title>ChickTools image round-trip sample</title>
+  <rect width="256" height="192" fill="#b8e2ea"/>
+  <circle cx="199" cy="47" r="24" fill="#ffcb60"/>
+  <path d="M0 135 70 58 145 151 196 93 256 145V192H0Z" fill="#417c79"/>
+  <path d="m48 82 22-24 24 30-17-5-9 6-8-12Z" fill="#fff8e9"/>
+  <path d="M0 149q65-36 134 3t122-5v45H0Z" fill="#81ac76"/>
+  <path d="M0 178q77-37 160-2t96 0v16H0Z" fill="#346760"/>
+  <path d="M30 46q8-9 16 0m-1 0q8-9 16 0M96 34q6-7 12 0m0 0q6-7 12 0" fill="none" stroke="#3d6671" stroke-width="3" stroke-linecap="round"/>
+</svg>
